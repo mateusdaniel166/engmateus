@@ -1,0 +1,138 @@
+/* Cores */
+:root {
+  /* Tons de cinza */
+  --c0: #ffffff;
+  --c1: #f7f7f7;
+  --c2: #ededed;
+  --c3: #dedede;
+  --c4: #cccccc;
+  --c5: #b2b2b2;
+  --c6: #9c9c9c;
+  --c7: #717171;
+  --c8: #595959;
+  --c9: #404040;
+  --c10: #2e2e2e;
+  --c11: #111111;
+  --c12: #000000;
+
+  /* Cores primárias */
+  --p0: #c3ebfa;
+  --p1: #27b7ec;
+  --p2: #278dec;
+  --p3: #1170c9;
+  --p4: #1150c9;
+  --p5: #021231;
+}
+
+.cor-0 {
+  color: var(--c0);
+}
+
+.cor-1 {
+  color: var(--c1);
+}
+.cor-2 {
+  color: var(--c2);
+}
+
+.cor-3 {
+  color: var(--c3);
+}
+
+.cor-4 {
+  color: var(--c4);
+}
+
+.cor-5 {
+  color: var(--c5);
+}
+
+.cor-6 {
+  color: var(--c6);
+}
+
+.cor-7 {
+  color: var(--c7);
+}
+
+.cor-8 {
+  color: var(--c8);
+}
+
+.cor-9 {
+  color: var(--c9);
+}
+
+.cor-10 {
+  color: var(--c10);
+}
+
+.cor-11 {
+  color: var(--c11);
+}
+
+.cor-12 {
+  color: var(--c12);
+}
+
+.cor-p0 {
+  color: var(--p0);
+}
+
+.cor-p1 {
+  color: var(--p1);
+}
+
+.cor-p2 {
+  color: var(--p2);
+}
+
+.cor-p3 {
+  color: var(--p3);
+}
+
+.cor-p4 {
+  color: var(--p4);
+}
+
+.cor-p5 {
+  color: var(--p5);
+}
+
+/* Tipografia */
+.font-1-xxl {
+  font: 600 3.75rem/1.133 "Poppins", sans-serif;
+}
+
+.font-1-xl {
+  font: 600 2.5rem/1.2 "Poppins", sans-serif;
+}
+
+.font-1-l {
+  font: 600 1.5rem/1.667 "Poppins", sans-serif;
+}
+
+.font-2-l {
+  font: 400 1.5rem/1.333 "Roboto", sans-serif;
+}
+
+.font-2-l-b {
+  font: 500 1.5rem/1.333 "Roboto", sans-serif;
+}
+
+.font-2-m {
+  font: 400 1.25rem/1.2 "Roboto", sans-serif;
+}
+
+.font-1-m {
+  font: 600 1.125rem/1.333 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.font-1-s {
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+}
+
+.font-2-s {
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}

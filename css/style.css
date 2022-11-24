@@ -1,0 +1,6 @@
+/* Estilos gerais */
+@import "./global.css";
+@import "./utilidades.css";
+
+/* Header */
+@import "./header.css";
