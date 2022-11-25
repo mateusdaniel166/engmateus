@@ -1,5 +1,8 @@
 /* Cores */
 :root {
+  /* Ajuste do tamanho da fonte na raíz */
+  font-size: 14px;
+
   /* Tons de cinza */
   --c0: #ffffff;
   --c1: #f7f7f7;
@@ -126,7 +129,6 @@
 
 .font-1-m {
   font: 600 1.125rem/1.333 "Poppins", sans-serif;
-  text-transform: uppercase;
 }
 
 .font-1-s {
@@ -135,4 +137,14 @@
 
 .font-2-s {
   font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+/* Container */
+.container {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }

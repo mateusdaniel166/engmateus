@@ -1,0 +1,104 @@
+.intro-bg {
+  background: url("../img/bg-intro.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 100px;
+}
+
+.intro h1 {
+  max-width: 16ch;
+  padding-bottom: 40px;
+}
+
+.intro p {
+  max-width: 50ch;
+  padding-bottom: 20px;
+}
+
+.intro p:nth-child(3) {
+  padding-bottom: 40px;
+  max-width: 32ch;
+}
+
+.intro a {
+  text-transform: uppercase;
+  margin-bottom: 100px;
+  max-width: max-content;
+}
+
+.intro a::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: currentColor;
+}
+
+.intro a:hover {
+  color: var(--c0);
+  transition: 0.3s;
+}
+
+@media (max-width: 1000px) {
+  .intro {
+    padding-top: 80px;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    padding-bottom: 32px;
+  }
+  .intro p {
+    font-size: 1.33rem;
+    padding-bottom: 16px;
+  }
+  .intro p:nth-child(3) {
+    padding-bottom: 32px;
+  }
+  .intro a {
+    font-size: 1.33rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    padding-top: 40px;
+  }
+  .intro p {
+    max-width: 32ch;
+  }
+  .intro p:nth-child(3) {
+    max-width: 26ch;
+  }
+}
+
+@media (max-width: 525px) {
+  .intro-bg {
+    background-position: left;
+  }
+  .intro {
+    padding-top: 32px;
+  }
+  .intro h1 {
+    font-size: 2.5rem;
+    padding-bottom: 24px;
+  }
+  .intro p {
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+  }
+  .intro p:nth-child(3) {
+    padding-bottom: 24px;
+  }
+  .intro a {
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+  }
+}
