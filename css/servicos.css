@@ -28,6 +28,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+  position: relative;
+}
+
+.cards::before {
+  content: "";
+  display: block;
+  width: 105%;
+  height: 100px;
+  background-color: var(--p2);
+  border-radius: 4px;
+  justify-self: center;
+  position: absolute;
+  top: 125px;
+  z-index: -1;
 }
 
 .card {
@@ -131,6 +145,9 @@
     position: absolute;
     left: -28px;
   }
+  .cards::before {
+    top: 90px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -144,6 +161,9 @@
   }
   .card ul {
     justify-self: left;
+  }
+  .cards::before {
+    display: none;
   }
 }
 
