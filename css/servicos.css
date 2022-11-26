@@ -1,0 +1,154 @@
+.servicos {
+  display: grid;
+  justify-items: center;
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+
+.servicos h1 {
+  grid-column: 1/-1;
+  justify-items: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.servicos h1::before {
+  content: "";
+  display: block;
+  background: url("../img/detalhe.svg") no-repeat;
+  width: 127px;
+  height: 113px;
+  position: absolute;
+  left: -44px;
+  top: -35px;
+  z-index: -1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.card {
+  background-color: var(--c1);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: start;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px rgba(1, 1, 1, 0.1);
+  padding-bottom: 40px;
+}
+
+.card img {
+  max-width: 96px;
+  max-height: 96px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.card h2 {
+  padding-bottom: 40px;
+}
+
+.card ul {
+  padding-left: 70px;
+  padding-right: 30px;
+}
+
+.card li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card li + li {
+  margin-top: 16px;
+}
+
+.card li::before {
+  content: "";
+  display: inline-block;
+  background: url("../img/lista.svg") no-repeat;
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  left: -36px;
+}
+
+@media (max-width: 1000px) {
+  .servicos {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .servicos h1 {
+    padding-bottom: 60px;
+    font-size: 3.25rem;
+  }
+  .servicos h1::before {
+    content: "";
+    display: block;
+    background: url("../img/detalhe.svg") no-repeat;
+    background-size: contain;
+    width: 103px;
+    height: 92px;
+    position: absolute;
+    left: -32px;
+    top: -22px;
+    z-index: -1;
+  }
+  .cards {
+    gap: 32px;
+  }
+  .card {
+    padding-bottom: 32px;
+  }
+  .card img {
+    max-width: 78px;
+    max-height: 78px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+  .card h2 {
+    padding-bottom: 32px;
+    font-size: 2rem;
+  }
+  .card ul {
+    padding-left: 60px;
+    padding-right: 24px;
+  }
+  .card li {
+    font-size: 1.125rem;
+  }
+  .card li::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/lista.svg") no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    left: -28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .card li {
+    max-width: 40ch;
+  }
+  .card ul {
+    justify-self: left;
+  }
+}
+
+@media (max-width: 525px) {
+  .servicos h1 {
+    font-size: 2.75rem;
+  }
+}
