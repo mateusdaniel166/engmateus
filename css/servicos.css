@@ -171,4 +171,8 @@
   .servicos h1 {
     font-size: 2.75rem;
   }
+  .servicos h1::before {
+    left: -33px;
+    top: -25px;
+  }
 }
