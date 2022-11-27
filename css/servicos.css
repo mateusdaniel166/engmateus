@@ -34,7 +34,7 @@
 .cards::before {
   content: "";
   display: block;
-  width: 105%;
+  width: 110%;
   height: 100px;
   background-color: var(--p2);
   border-radius: 4px;
