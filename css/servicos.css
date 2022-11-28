@@ -6,8 +6,8 @@
 }
 
 .servicos h1 {
+  text-align: center;
   grid-column: 1/-1;
-  justify-items: center;
   padding-bottom: 100px;
   position: relative;
 }
@@ -16,11 +16,12 @@
   content: "";
   display: block;
   background: url("../img/detalhe.svg") no-repeat;
+  background-size: contain;
   width: 127px;
   height: 113px;
   position: absolute;
-  left: -44px;
-  top: -35px;
+  left: -39px;
+  top: -25px;
   z-index: -1;
 }
 

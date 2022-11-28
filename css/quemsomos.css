@@ -1,0 +1,143 @@
+.quemsomos-bg {
+  background: linear-gradient(90deg, var(--c0) 0 25%, var(--p5) 0 75%);
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.quemsomos {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.quemsomos h1 {
+  grid-column: 1/-1;
+  text-align: center;
+  justify-self: center;
+  max-width: fit-content;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 0;
+}
+
+.quemsomos h1::before {
+  content: "";
+  display: block;
+  background: url("../img/detalhe.svg") no-repeat;
+  background-size: contain;
+  width: 127px;
+  height: 113px;
+  position: absolute;
+  left: -39px;
+  top: -25px;
+  z-index: -1;
+}
+
+.quemsomos-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 100px;
+}
+
+.quemsomos-conteudo img {
+  height: 100%;
+  border-radius: 4px;
+  grid-row: 1/5;
+  justify-self: right;
+  object-position: center;
+  object-fit: cover;
+}
+
+.quemsomos-conteudo a {
+  max-width: max-content;
+  margin-bottom: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.quemsomos-conteudo h2:hover {
+  color: var(--p1);
+  transition: 0.3s;
+}
+
+.quemsomos-conteudo p + p {
+  padding-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .quemsomos-bg {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .quemsomos h1 {
+    padding-bottom: 60px;
+    font-size: 3.25rem;
+  }
+  .quemsomos h1::before {
+    width: 103px;
+    height: 92px;
+    left: -32px;
+    top: -22px;
+  }
+  .quemsomos-conteudo {
+    column-gap: 60px;
+  }
+  .quemsomos-conteudo a {
+    margin-bottom: 24px;
+  }
+  .quemsomos-conteudo h2 {
+    font-size: 2rem;
+  }
+  .quemsomos-conteudo p {
+    font-size: 1.25rem;
+    line-height: 1.33;
+  }
+  .quemsomos-conteudo p + p {
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 750px) {
+  .quemsomos-bg {
+    background: var(--p5);
+  }
+  .quemsomos-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .quemsomos-conteudo img {
+    max-width: 350px;
+    justify-self: center;
+  }
+  .quemsomos-conteudo a {
+    padding-top: 48px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 525px) {
+  .quemsomos h1 {
+    font-size: 2.75rem;
+  }
+  .quemsomos h1::before {
+    left: -32px;
+    top: -24px;
+  }
+  .quemsomos img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .quemsomos-conteudo img {
+    display: none;
+  }
+  .quemsomos h1 {
+    font-size: 2.3rem;
+  }
+  .quemsomos h1::before {
+    left: -32px;
+    top: -24px;
+  }
+  .quemsomos-conteudo a {
+    padding-top: 20px;
+  }
+}

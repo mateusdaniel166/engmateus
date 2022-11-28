@@ -75,6 +75,6 @@
   .header-menu {
     justify-content: center;
     font: 600 1.1rem/1.5 "Poppins", sans-serif;
-    gap: 24px;
+    gap: 20px;
   }
 }
