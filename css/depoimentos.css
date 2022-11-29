@@ -1,0 +1,140 @@
+.depoimentos-bg {
+  background: url("../img/bg-depoimentos.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.depoimentos {
+  display: grid;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  place-items: center center;
+}
+
+.depoimentos h1 {
+  text-align: center;
+  max-width: fit-content;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 0;
+}
+
+.depoimentos h1::before {
+  content: "";
+  display: block;
+  background: url("../img/detalhe.svg") no-repeat;
+  background-size: contain;
+  width: 127px;
+  height: 113px;
+  position: absolute;
+  left: -39px;
+  top: -25px;
+  z-index: -1;
+}
+
+.depoimentos-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+  row-gap: 80px;
+  place-content: center center;
+}
+
+.depoimentos-box {
+  display: grid;
+  justify-items: center;
+}
+
+.depoimentos-box-img {
+  display: grid;
+  padding-bottom: 32px;
+  max-width: fit-content;
+}
+
+.depoimentos-box-img img {
+  height: 160px;
+  width: 160px;
+  border-radius: 100%;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.depoimentos-box p {
+  text-align: center;
+  padding-bottom: 16px;
+  max-width: 40ch;
+}
+
+.depoimentos-box p + p {
+  padding-bottom: 4px;
+}
+
+.depoimentos-box p:last-child {
+  padding-bottom: 0px;
+}
+
+@media (max-width: 1000px) {
+  .depoimentos {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .depoimentos h1 {
+    padding-bottom: 60px;
+    font-size: 3.25rem;
+  }
+  .depoimentos h1::before {
+    width: 103px;
+    height: 92px;
+    left: -32px;
+    top: -22px;
+  }
+  .depoimentos-conteudo {
+    column-gap: 100px;
+    row-gap: 72px;
+  }
+  .depoimentos-box-img {
+    padding-bottom: 24px;
+  }
+  .depoimentos-box-img img {
+    height: 140px;
+    width: 140px;
+  }
+  .depoimentos-box p {
+    font-size: 1.25rem;
+  }
+  .depoimentos-box p:last-child {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .depoimentos-bg {
+    background: #f5f9fc;
+  }
+  .depoimentos-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .depoimentos-box p {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 525px) {
+  .depoimentos h1 {
+    font-size: 2.75rem;
+  }
+  .depoimentos h1::before {
+    left: -32px;
+    top: -24px;
+  }
+  .depoimentos-conteudo {
+    gap: 48px;
+  }
+  .depoimentos-box-img img {
+    height: 120px;
+    width: 120px;
+  }
+}
