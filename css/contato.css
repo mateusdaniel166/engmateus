@@ -223,6 +223,9 @@
   .contato-conteudo-info-dados p {
     padding-left: 24px;
   }
+  .formulario button {
+    align-self: center;
+  }
 }
 
 @media (max-width: 525px) {
@@ -247,6 +250,9 @@
     font-size: 1.125rem;
     padding-bottom: 16px;
   }
+  .contato-conteudo-info-redes {
+    justify-self: center;
+  }
   .contato-conteudo-info-redes-icones {
     gap: 24px;
   }
@@ -257,11 +263,5 @@
   .contato-conteudo {
     padding: 24px;
     gap: 24px;
-  }
-}
-
-@media (max-width: 450px) {
-  .contato-conteudo-info-redes {
-    justify-self: center;
   }
 }
